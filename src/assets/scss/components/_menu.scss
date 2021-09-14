@@ -1,8 +1,0 @@
-.menu {
-	@include flex (center, space-between, $flex-direction: column);
-
-	// .menu__link
-	&__link {
-		text-align: left;
-	}
-}
