@@ -1,0 +1,42 @@
+// abstracts
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+
+
+// base
+@import "./base/normalize";
+@import "./base/fonts";
+
+// layout
+@import "./layouts/page-2";
+
+// components
+
+@import "./components/btn";
+@import "./components/button";
+
+@import "./components/logo";
+@import "./components/menu";
+@import "./components/title";
+@import "./components/input";
+@import "./components/search";
+@import "./components/select";
+@import "./components/radio";
+@import "./components/text";
+@import "./components/scrollbars";
+@import "./components/contacts";
+@import "./components/form";
+@import "./components/link";
+
+// sections
+@import "./sections/info";
+@import "./sections/product-card";
+@import "./sections/products";
+@import "./sections/options";
+
+// block
+@import "./blocks/aside";
+@import "./blocks/footer";
+@import "./blocks/header";
+@import "./blocks/main";
+

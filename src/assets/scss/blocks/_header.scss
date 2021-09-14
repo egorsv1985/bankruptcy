@@ -1,0 +1,25 @@
+.header {
+	border-bottom: 2px solid $accentColor;
+	padding: 0px 8px 0px 32px;
+
+	// .header__wrapper
+	&__wrapper {
+		@include flex (space-between, center);
+	}
+
+	// .header__inner
+	&__inner {
+		@include flex (center, center);
+	}
+
+	// .header__logo
+	&__logo {
+		margin-inline-end: 12px;
+	}
+
+	// .header__btn
+	&__btn {		
+		@include wh (100px, 30px);		
+		@include border (2px, solid, $accentColor);		
+	}
+}

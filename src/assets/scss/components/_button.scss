@@ -1,0 +1,14 @@
+.button {
+	@include flex (center, center);
+	@include font (12px, 20px, 500, center, uppercase);
+	letter-spacing: 2px;
+	border-radius: 4px;
+	color: $primaryColor;
+	background-color: $accentColor;
+	@include border (1px, solid, $accentColor);
+	&:hover {
+		border-color: $accentColor;
+		background-color: $primaryColor;
+		color: $accentColor;		
+	}
+}

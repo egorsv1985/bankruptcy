@@ -1,0 +1,42 @@
+.text {
+	@include font (14px, 17px, 500);
+	color: $textColor;
+
+	&--date {
+		@include font (9px, 13px, 400, center);
+		color: $accentColorText;
+		margin-bottom: 7px;
+	}
+
+	&--bold {
+		@include font (14px, 15px, 500);
+		color: $accentColor;		
+		}
+		&__small {
+			@include font (12px, 15px, 400);
+		}
+	}
+
+// .text {
+
+// 	@include font (24px, 44px);
+// 	color: #22356F;
+
+
+
+// 	&--blue {
+// 		color: #6CD3E1;
+// 	}
+
+// 	&--light {
+// 		color: #FFF;
+// 	}
+
+// 	&--orange {
+// 		color: #FAB63E;
+// 	}
+// 	&--bold {
+// 		@include font (24px, 40px, 700);
+// 	}
+
+// }

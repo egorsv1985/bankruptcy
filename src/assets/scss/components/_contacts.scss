@@ -1,0 +1,54 @@
+.contacts {
+	// .contacts__wrap
+	&__wrap {
+		@include flex (space-between, $flex-direction: column);
+		max-width: 220px;
+		padding-left: 30px;
+		margin-bottom: 15px;
+	}
+
+	// .contacts__city
+	&__city {
+		@include font (14px, 22px, 400);
+		color: $secondaryTextColor;
+		position: relative;
+		margin-bottom: 10px;	
+		&::before {
+			@include pseudo;
+			@include background (url(../images/page-2/footer/footer-map.png));
+			@include wh (24px);
+			@include pos (absolute, $top: 0, $left:-20%);
+		}
+	}
+
+	// .contacts__adress
+	&__adress {
+		font-style: normal;
+	}
+
+	// .contacts__tel
+	&__tel {
+		@include font (14px, 22px, 400);
+		color: $secondaryTextColor;
+		position: relative;
+		margin-bottom: 15px;
+		&::before {
+			@include pseudo;
+			@include background (url(../images/page-2/footer/footer-tel.png));
+			@include wh (24px);
+			@include pos (absolute, $top: 0, $left:-20%);
+		}
+	}
+
+	// .contacts__email
+	&__email {
+		@include font (14px, 22px, 400);
+		color: $accentColor;
+	}
+
+	// .contacts__list
+	&__list {
+		@include flex (space-between, center);
+	}
+
+}

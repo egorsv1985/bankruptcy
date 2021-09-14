@@ -1,0 +1,223 @@
+.options {
+
+	// .options__parametres
+	&__parametres {}
+
+	// .options__accordion
+	&__accordion {
+		&[open] {
+			summary {
+				&::after {
+					transform: rotate(180deg);
+				}
+			}
+		}
+	}
+
+	// .options__summary
+	&__summary {
+		position: relative;
+		width: 350px;
+		margin-bottom: 8px;
+		padding-left: 10px;
+
+		&::after {
+			@include pseudo;
+			@include background (url(../images/page-2/main/main-little-arrow.svg));
+			@include pos (absolute, $top: 18%, $right: 4%);
+			@include wh (20px, 15px);
+			transform: rotate(0deg);
+			transform-origin: center;
+			transition: all 0.2s;
+		}
+
+	}
+
+	// details summary:before {
+	// 	content: '\f0fe';
+	// 	font-family: "Font Awesome 5 free";
+	// 	margin-right: 7px;
+	//  }
+
+	/* Добавляем собственный маркер для открытого состояния */
+
+
+	// .options__title
+	&__title {
+		@include font (16px, 22px);
+		color: $accentColorText;
+	}
+
+	// .options__wrapper
+	&__wrapper {
+		@include flex (center, $flex-direction: column);
+		background-color: $bgMainColor;
+		border-radius: 4px;
+		padding: 5px 15px 0 10px;
+	}
+
+	// .options__wrap
+	&__wrap {
+		@include flex();
+	}
+
+	&__wrap+&__wrap {
+		margin-top: 20px;
+	}
+
+	// .options__regions
+	&__regions {
+		margin-right: 30px;
+		flex-basis: 36%;
+	}
+
+	// .options__subtitle
+	&__subtitle {
+		@include font (16px, 22px, 400);
+		color: $accentColorText;
+		letter-spacing: -0.3px;
+		white-space: nowrap;		
+	}
+
+	// .options__select
+	&__select {
+		
+
+	}
+
+
+
+
+
+
+	// .options__type
+	&__type {
+		margin-right: 15px;
+		flex-basis: 36%;
+	}
+
+	// .options__currency
+	&__currency {
+		@include flex ($flex-direction: column);
+
+	}
+
+	// .options__inner
+	&__inner {
+		@include flex ();
+	}
+
+
+
+
+
+	// .options__radio-btn
+	&__radio-btn {
+		margin-right: 10px;
+	}
+
+
+
+
+	// .form_radio_btn {
+	// 	display: inline-block;
+	// 	margin-right: 10px;
+	// }
+	// .form_radio_btn input[type=radio] {
+	// 	display: none;
+	// }
+	// .form_radio_btn label {
+	// 	display: inline-block;
+	// 	cursor: pointer;
+	// 	padding: 0px 15px;
+	// 	line-height: 34px;
+	// 	border: 1px solid #999;
+	// 	border-radius: 6px;
+	// 	user-select: none;
+	// }
+
+	/* Checked */
+	// .form_radio_btn input[type=radio]:checked + label {
+	// 	background: #ffe0a6;
+	// }
+
+	/* Hover */
+	// .form_radio_btn label:hover {
+	// 	color: #666;
+	// }
+
+	/* Disabled */
+	// .form_radio_btn input[type=radio]:disabled + label {
+	// 	background: #efefef;
+	// 	color: #666;
+	// }
+	// .options__currency
+
+
+	// .options__label
+	&__label {}
+
+	// .options__radio
+	&__radio {}
+
+	// .options__catalog
+	&__catalog {
+		@include flex ($flex-direction: column);
+		margin-right: 60px;
+	}
+
+	// .options__input
+	&__input {
+		@include wh (110px, 25px);
+		border-radius: 4px 0px 0px 4px;
+		padding-left: 10px;
+	}
+
+	// .options__price
+	&__price {
+		@include flex ($flex-direction: column);
+		margin-right: 65px;
+	}
+
+	// .options__box
+	&__box {
+		@include flex ();
+	}
+
+
+
+
+
+	// .options__date
+	&__date {
+		@include flex ($flex-direction: column);
+	}
+
+	// .options__found
+	&__found {
+		@include flex ($flex-direction: column);
+		margin-top: 25px;
+	}
+
+	// .options__found-btn
+	&__found-btn {
+		@include wh(300px, 45px);
+		background-color: $bgBtnColor;
+		color: $primaryColor;
+	}
+
+
+
+	// .options__btn
+	&__btn {
+		@include wh (134px, 22px);
+		@include font (14px, 22px, 400, $text-transform: none);
+		color: $btnColorTextReset;
+		margin: 10px 0 0 80px;
+		border: none;
+		letter-spacing: .3px;
+
+
+
+		}
+}

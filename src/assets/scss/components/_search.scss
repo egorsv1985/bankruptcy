@@ -1,0 +1,45 @@
+.search {
+
+	// .search__box
+	&__box {
+		position: relative;
+	}
+
+	// .search__img-btn
+	&__img-btn {
+		@include wh (20px);
+		@include pos (absolute, $top: 50%, $left: 4%);
+		transform: translate(-50%, -50%);
+		@include background (url(../images/page-2/main/search.png));
+		border: none;
+	}
+
+
+	// .search__button
+	&__button {
+
+		@include wh (133px, 46px);
+	}
+
+
+	// .search__input
+	&__input {
+		@include wh (650px, 48px);
+		padding-inline-start: 45px;
+		margin-right: 15px;
+		text-align: left;
+
+		&::placeholder {
+			font-weight: 400;
+
+		}
+	}
+}
+
+.btn {}
+
+.btn--img {}
+
+.input {}
+
+.btn--wide {}

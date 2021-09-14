@@ -1,0 +1,28 @@
+.info {
+	margin-bottom: 34px;
+	padding-left: 10px;
+
+	// .info__wrapper
+	&__search {
+		@include flex (space-between, center);
+		margin-bottom: 15px;
+	}
+
+	// .info__btn
+	&__btn {
+		background-color: $bgBtnColor;
+		@include wh (45px);
+		border-color: $bgBtnColor;
+	}
+
+	// .info__inner
+	&__inner {
+		@include flex (space-between, center);
+	}
+
+	// .info__wrap
+	&__wrap {
+		@include flex ();
+	}
+
+}
