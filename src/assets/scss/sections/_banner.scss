@@ -1,0 +1,69 @@
+.banner {
+
+	// .banner__wrapper
+
+	&__wrapper {
+		@include flex ($flex-direction: column);
+		background-color: $accentColor;
+		padding: 62px 24px 72px 19px;
+	}
+
+	// .banner__caption
+	&__caption {
+		display: flex;
+		margin-bottom: 45px;
+	}
+
+	// .banner__logo
+	&__logo {
+		margin-right: 10px;
+		margin-top: 5px;
+	}
+
+	// .banner__title
+	&__title {
+		@include font (58px, 69px, 500, $text-transform:uppercase);
+		color: $primaryColor;
+		max-width: 945px;
+	}
+
+	// .banner__description
+	&__description {
+		@include flex (space-between, center);
+		padding-left: 100px;
+	}
+
+	// .banner__content
+	&__content {}
+
+	// .banner__text
+	&__text {
+		@include font (24px, 28px, 500);
+		color: #E5E5E5;
+	}
+
+	&__text+&__text {
+		margin-top: 17px;
+	}
+
+	// .banner__buttons
+	&__buttons {
+		display: flex;
+		align-self: flex-end;
+	}
+
+	// .banner__btn
+	&__btn {
+		@include font (18px, 20px);
+		@include wh (151px, 56px);
+		background-color: $primaryColor;
+		margin-right: 33px;
+	}
+
+	// .banner__button
+	&__button {
+		height: 56px;
+		@include font (18px, 20px, 700, $text-transform:none);
+		text-decoration-line: underline;
+	}
+}

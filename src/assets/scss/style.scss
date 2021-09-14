@@ -6,9 +6,10 @@
 // base
 @import "./base/normalize";
 @import "./base/fonts";
+@import "./base/container";
 
 // layout
-@import "./layouts/page-2";
+// @import "./layouts/page-2";
 
 // components
 
@@ -27,16 +28,24 @@
 @import "./components/contacts";
 @import "./components/form";
 @import "./components/link";
+@import "./components/subtitle";
+@import "./components/categories";
+
+
+@import "./components/card";
+@import "./components/link";
 
 // sections
-@import "./sections/info";
-@import "./sections/product-card";
+@import "./sections/banner";
+@import "./sections/description";
+@import "./sections/block";
+@import "./sections/about";
+@import "./sections/work";
 @import "./sections/products";
-@import "./sections/options";
+@import "./sections/action";
+
 
 // block
-@import "./blocks/aside";
-@import "./blocks/footer";
-@import "./blocks/header";
-@import "./blocks/main";
 
+@import "./blocks/header";
+@import "./blocks/footer";

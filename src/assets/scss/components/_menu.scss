@@ -1,8 +1,40 @@
 .menu {
-	@include flex (center, space-between, $flex-direction: column);
+	@include flex (space-between, center);
+
 
 	// .menu__link
 	&__link {
 		text-align: left;
 	}
+
+	// .menu__list
+	&__list {
+		@include flex ($align-items: center);
+		margin-right: 40px;
+	}
+
+	// .menu__item
+	&__item {
+		position: relative;
+
+		&--select {
+
+			&::after {
+				@include pseudo;
+				@include background (url('../images/page-home/header/select-arrow.png'));
+				@include pos (absolute, $top:24%, $right: -14%);
+				@include wh (8px, 7px);
+			}
+		}
+	}
+
+	&__item+&__item {
+		margin-left: 62px;
+	}
+
+	// .menu__link
+	&__link {}
+
+	// .menu__select
+	&__select {}
 }

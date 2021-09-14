@@ -1,0 +1,12 @@
+.categories {
+
+	// .categories__img
+	&__img {}
+
+	// .categories__description
+	&__description {
+		@include font (14px, 17px, 700, $text-transform: uppercase);
+		color: #000000;
+		margin-top: 38px;
+	}
+}

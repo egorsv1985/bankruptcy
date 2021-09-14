@@ -1,0 +1,27 @@
+.block {
+
+
+	// .block__content 
+	&__content {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(min-content, max-content));
+		gap: 50px 20px;
+
+
+	}
+
+	// .block__search
+	&__search {
+		grid-area: 1 / 1 / 2 / 3;
+		padding-left: 17px;
+		margin-top: 20px;
+
+	}
+
+
+	// .block__wrapper
+	&__wrapper {
+		@include flex ($flex-direction: column);
+	}
+
+}

@@ -5,418 +5,447 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="assets/css/style.min.css">
 
-    <title>BANKRUPTCY-page-2</title>
+    <title>BANKRUPTCY-HOMEPAGE</title>
 
 </head>
 
 <body>
-    <div class="grid">
-        <!-- header -->
-        <header class="header">
 
+
+    <header class="header">
+        <div class="container">
             <div class="header__wrapper">
-                <div class="header__inner">
-                    <div class="header__logo logo"><a class="logo__link" href="#"><img
-                                src="./assets/images/page-2/header/header-logo.png" alt="" class="logo__img"></a>
-                    </div>
+                <div class="header__logo logo">
+                    <a class="logo__link" href="#">
+                        <img class="logo__img" src="./assets/images/page-2/header/header-logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="header__right-block">
                     <nav class="header__menu menu">
                         <ul class="menu__list">
                             <li class="menu__item">
-                                <a class="menu__link link" href="#">О нас</a>
-                            </li>
-                            <li class="menu__item">
                                 <a class="menu__link link" href="#">каталог</a>
                             </li>
+                            <li class="menu__item menu__item--select">
+                                <select class="menu__select select link" name="" id="">
+                                    <!-- todo select arrow -->
+                                    <option class="select__item link" value="">
+                                        <a class="menu__link link" href="#">продавцам</a>
+                                    </option>
+                                    <option class="select__item link" value="">
+                                        <a class="menu__link link" href="#">продавцам</a>
+                                    </option>
+                                    <option class="select__item link" value="">
+                                        <a class="menu__link link" href="#">продавцам</a>
+                                    </option>
+
+                                </select>
+                            </li>
+                            <li class="menu__item menu__item--select">
+                                <select class="menu__select select link" name="" id="">
+                                    <!-- todo select arrow -->
+                                    <option class="select__item link" value="">
+                                        <a class="menu__link link" href="#">покупателям</a>
+                                    </option>
+                                    <option class="select__item link" value="">
+                                        <a class="menu__link link" href="#">покупателям</a>
+                                    </option>
+                                    <option class="select__item link" value="">
+                                        <a class="menu__link link" href="#">покупателям</a>
+                                    </option>
+
+                                </select>
+                            </li>
                             <li class="menu__item">
-                                <a class="menu__link link" href="#">FAQ</a>
+                                <a class="menu__link link" href="#">поддержка</a>
                             </li>
                         </ul>
                     </nav>
+                    <button class="header__btn btn" type="button">регистрация</button>
                 </div>
-                <button class="header__btn btn">ВОЙТИ</button>
             </div>
+        </div>
+    </header>
 
-        </header>
-        <!-- end header  -->
-
-        <!-- aside  -->
-        <aside class="aside">
-            <div class="aside__scroll">
-
-                <div class="aside__wrapper">
-
-                    <div class="aside__buttons">
-                        <a class="aside__btn btn" href="#">купить</a>
-                        <a class="aside__button button" href="#">Продать</a>
+    <section class="banner">
+        <div class="container">
+            <div class="banner__wrapper">
+                <div class="banner__caption">
+                    <div class="banner__logo">
+                        <img class="logo__img" src="./assets/images/page-home/banner/N1.svg" alt="logo">
                     </div>
+                    <h1 class="banner__title">складская торговая онлайн площадка</h1>
+                </div>
+                <div class="banner__description">
+                    <div class="banner__content">
+                        <p class="banner__text text">Сотни ликвидационных аукционов</p>
+                        <p class="banner__text text">Десятки товарных категорий</p>
+                        <p class="banner__text text">Партии от коробки до грузовой машины</p>
 
-                    <div class="aside__inner">
-                        <div class="aside__content">
-                            <p class="aside__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                                viverra
-                                tortor,
-                                quam
-                                tempor in ullamcorper elementum diam diam. Et sit lectus at gravida nibh tempus. </p>
-                            <p class="aside__text text">Uspendisse blandit
-                                pulvinar tempus neque eget consequat lectus. Eget quam pharetra turpis pulvinar facilisi
-                                vitae
-                                vel
-                                scelerisque. Arcu pellentesque integer fermentum amet amet, tristique. </p>
-                            <p class="aside__text text">Tortor nisl id integer cursus ac.</p>
-                            <p class="aside__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                                viverra
-                                tortor,
-                                quam tempor in
-                                ullamcorper elementum diam diam. Et sit lectus at gravida nibh tempus.</p>
-                        </div>
-                        <h 2 class="aside__title title">КАК ЭТО РАБОТАЕТ</h>
-                        <div class="aside__content">
-                            <p class="aside__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                                viverra
-                                tortor,
-                                quam
-                                tempor in ullamcorper elementum diam diam. Et sit lectus at gravida nibh tempus. </p>
-                            <p class="aside__text text">Uspendisse blandit
-                                pulvinar tempus neque eget consequat lectus. Eget quam pharetra turpis pulvinar facilisi
-                                vitae
-                                vel
-                                scelerisque. Arcu pellentesque integer fermentum amet amet, tristique.
-                            </p>
-                            <p class="aside__text text">Tortor nisl id integer cursus ac.</p>
-                            <p class="aside__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                                viverra
-                                tortor,
-                                quam tempor in
-                                ullamcorper elementum diam diam. Et sit lectus at gravida nibh tempus.</p>
-                        </div>
+                    </div>
+                    <div class="banner__buttons" role="group" aria-label="">
+                        <a class="banner__btn btn" href="#">начать</a>
+                        <a class="banner__button button" href="#">Как это работает</a>
+
                     </div>
                 </div>
             </div>
-        </aside>
-        <!-- end aside  -->
+        </div>
+    </section>
 
-        <!-- main  -->
-        <main class="main">
 
-            <!-- info  -->
-            <section class="info">
-                <div class="info__search search">
-                    <div class="search__box">
-                        <button class="search__img-btn btn btn--transparent"></button>
-                        <input class="search__input input" type="search" name="search" id="search"
-                            placeholder="Наименованию лота, название">
+    <section class="description">
+        <div class="container">
+            <ul class="description__grid">
+                <li class="description__item">
+                    <img class="description__img" src="./assets/images/page-home/description/work.png" alt="work">
+                    <a class="description__link link" href="#">Как это работает</a>
+                </li>
+                <li class="description__item">
+                    <img class="description__img" src="./assets/images/page-home/description/about.png" alt="about us">
+                    <a class="description__link link" href="#">О нас</a>
+                </li>
+                <li class="description__item">
+                    <img class="description__img" src="./assets/images/page-home/description/history.png" alt="history">
+                    <a class="description__link link" href="#">История начала</a>
+                </li>
+                <li class="description__item">
+                    <img class="description__img" src="./assets/images/page-home/description/terms.png" alt="terms">
+                    <a class="description__link link" href="#">Условия размещения</a>
+                </li>
+                <li class="description__item">
+                    <img class="description__img" src="./assets/images/page-home/description/buy.png" alt="buy">
+                    <a class="description__link link" href="#">Как купить</a>
+                </li>
+                <li class="description__item">
+                    <img class="description__img" src="./assets/images/page-home/description/rules.png" alt="rules">
+                    <a class="description__link link" href="#">Правила размещения сделок</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="block">
+        <div class="container block__content">
+            <div class="block__search search">
+                <div class="search__box">
+                    <button class="search__img-btn btn btn--transparent"></button>
+                    <input class="search__input input" type="search" name="search" id="search"
+                        placeholder="Наименование лота, название">
+                </div>
+                <button class="search__btn btn btn--transparent">Поиск</button>
+            </div>
+            <div class="block__card card">
+
+                <div class="card__content">
+                    <div class="card__product">
+
+                        <img class="card__img" src="./assets/images/page-home/block/product1.jpg" alt="product">
+                        <div class="card__wrap">
+                            <div class="card__name">
+                                <h3 class="card__title">фен от ИП “--”</h3>
+                                <span class="card__price">100 руб.</span>
+                            </div>
+                            <span class="card__desc">Мощность: 1000 вт</span>
+                            <span class="card__desc">Пластик</span>
+                            <a class="card__link link" href="#">подробнее</a>
+
+                        </div>
+
                     </div>
-                    <button class="search__button button">Поиск</button>
+                    <div class="card__product">
+
+                        <img class="card__img" src="./assets/images/page-home/block/product2.jpg" alt="product">
+                        <div class="card__wrap">
+                            <div class="card__name">
+                                <h3 class="card__title">часы от ИП “--”</h3>
+                                <span class="card__price">100 руб.</span>
+                            </div>
+                            <span class="card__desc">Мощность: 1000 вт</span>
+                            <span class="card__desc">Сталь</span>
+                            <a class="card__link link" href="#">подробнее</a>
+
+                        </div>
+
+                    </div>
+                    <a class="card__new link link--white link--left" href="#">новые добавления</a>
                 </div>
 
-                <div class="info__inner">
-                    <div class="info__wrap">
-                        <input type="text" class="info__date input" placeholder="Дата размещения">
-                        <button class="info__btn btn btn--bg"></button>
+            </div>
+            <div class="block__card card">
+
+                <div class="card__content">
+                    <div class="card__product">
+
+                        <img class="card__img" src="./assets/images/page-home/block/product1.jpg" alt="product">
+                        <div class="card__wrap">
+                            <div class="card__name">
+                                <h3 class="card__title">фен от ИП “--”</h3>
+                                <span class="card__price">100 руб.</span>
+                            </div>
+                            <span class="card__desc">Мощность: 1000 вт</span>
+                            <span class="card__desc">Пластик</span>
+                            <a class="card__link link" href="#">подробнее</a>
+
+                        </div>
+
                     </div>
-                    <div class="info__wrap">
-                        <input type="text" class="info__price input" placeholder="Цена лота">
-                        <button class="info__btn btn btn--bg"></button>
+                    <div class="card__product">
+
+                        <img class="card__img" src="./assets/images/page-home/block/product2.jpg" alt="product">
+                        <div class="card__wrap">
+                            <div class="card__name">
+                                <h3 class="card__title">часы от ИП “--”</h3>
+                                <span class="card__price">100 руб.</span>
+                            </div>
+                            <span class="card__desc">Мощность: 1000 вт</span>
+                            <span class="card__desc">Сталь</span>
+                            <a class="card__link link" href="#">подробнее</a>
+
+                        </div>
+
                     </div>
-                    <div class="info__wrap">
-                        <input type="text" class="info__parametr input" placeholder="еще параметр">
-                        <button class="info__btn btn btn--bg"></button>
+                    <a class="card__new link link--white link--left" href="#">Часто просматриваемые</a>
+
+                </div>
+
+            </div>
+
+            <div class="block__card card card--blogers card--bg-gray">
+                <div class="card__content">
+                    <div class="card__product card__product--after">
+                        <img class="card__img" src="./assets/images/page-home/block/bloger1.jpg" alt="bloger">
+                        <div class="card__wrap card__wrap--bg">
+                            <div class="card__name">
+                                <h3 class="card__title">блогер миша</h3>
+                                <span class="card__price">100 руб.</span>
+                            </div>
+                            <span class="card__desc">2999 подписчика</span>
+                            <span class="card__desc">55 постов</span>
+                            <a class="card__link link" href="#">подробнее</a>
+
+                        </div>
+
+                    </div>
+                    <div class="card__product card__product--after">
+
+                        <img class="card__img" src="./assets/images/page-home/block/bloger2.jpg" alt="bloger">
+                        <div class="card__wrap card__wrap--bg">
+                            <div class="card__name">
+                                <h3 class="card__title">блогер олег</h3>
+                                <span class="card__price">100 руб.</span>
+                            </div>
+                            <span class="card__desc">2999 подписчика</span>
+                            <span class="card__desc">55 постов</span>
+                            <a class="card__link link" href="#">подробнее</a>
+
+                        </div>
+
+                    </div>
+                    <div class="card__advertisement">
+                        <h4 class="card__place">Размести рекламу у блогера прямо сейчас </h4>
+                        <a class="card__link link link--dark link--border link--left link--pl" href="#">подробнее</a>
                     </div>
                 </div>
-            </section>
-            <!-- end info  -->
+            </div>
+        </div>
+    </section>
 
-            <!-- options -->
-            <section class="options">
-                <div class="options__parametres">
-                    <details class="options__accordion" open>
-                        <summary class="options__summary">
-                            <h2 class="options__title">Дополнительные параметры поиска</h2>
-                        </summary>
-                        <div class="options__wrapper">
-                            <div class="options__wrap">
-                                <div class="options__regions" style="width: 200px;">
-                                    <h3 class="options__subtitle subtitle">Выберите регион размещения лота</h3>
-                                    <div class="options__select">
-                                        <select class="select__list" name="" id="">
-                                            <option class="select__item" value="">Выбрать из списка</option>
-                                            <option class="select__item" value="">Выбрать из списка</option>
-                                            <option class="select__item" value="">Выбрать из списка</option>
-                                        </select>
-                                    </div>
-                                </div>
 
-                                <div class="options__type">
-                                    <h3 class="options__subtitle subtitle">Выберите тип лота</h3>
-                                    <div class="options__select">
-                                        <select class="select__list" name="" id="">
-                                            <option class="select__item" value="">Выбрать из списка</option>
-                                            <option class="select__item" value="">Выбрать из списка</option>
-                                            <option class="select__item" value="">Выбрать из списка</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="options__currency">
-                                    <h3 class="options__subtitle subtitle">Валюта</h3>
-                                    <div class="options__inner">
-                                        <div class="options__radio-btn radio">
-                                            <input class="radio__btn" id="radio-1" type="radio" name="radio" value="1"
-                                                checked>
-                                            <label class="radio__label" for="radio-1">RUB</label>
-                                        </div>
-
-                                        <div class="options__radio-btn radio">
-                                            <input class="radio__btn" id="radio-2" type="radio" name="radio" value="2">
-                                            <label class="radio__label" for="radio-2">USD</label>
-                                        </div>
-
-                                        <div class="options__radio-btn radio">
-                                            <input class="radio__btn" id="radio-3" type="radio" name="radio" value="3">
-                                            <label class="radio__label" for="radio-3">EUR</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="options__wrap">
-                                <div class="options__catalog">
-                                    <h3 class="options__subtitle subtitle">Дата размещения в каталоге</h3>
-                                    <div class="options__box">
-                                        <input class="options__input input" type="text" placeholder="От">
-                                        <input class="options__input input" type="text" placeholder="До">
-                                    </div>
-                                </div>
-
-                                <div class="options__price">
-                                    <h3 class="options__subtitle subtitle">Цена лота</h3>
-                                    <div class="options__box">
-                                        <input class="options__input input" type="text" placeholder="От">
-                                        <input class="options__input input" type="text" placeholder="До">
-                                    </div>
-                                </div>
-
-                                <div class="options__date">
-                                    <h3 class="options__subtitle subtitle">Дата размещения на сайте</h3>
-                                    <div class="options__box">
-                                        <input class="options__input input" type="text" placeholder="От">
-                                        <input class="options__input input" type="text" placeholder="До">
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="options__found">
-                                <button class="options__found-btn btn">НАЙДЕНО ЛОТОВ: 132</button>
-                                <button class="options__btn btn">Очистить фильтр x</button>
-                            </div>
-                        </div>
-
-                    </details>
-                </div>
-            </section>
-            <!-- end options  -->
-
-            <!-- products -->
-            <section class="products">
-                <article class="product-card">
-                    <div class="product-card__grid">
-                        <div class="product-card__box">
-                            <div class="product-card__wrap">
-                                <img class="product-card__img" src="./assets/images/page-2/main/car-icons-1.svg"
-                                    alt="car">
-                            </div>
-
-                            <div class="product-card__inner">
-                                <div class="product-card__content">
-                                    <span class="product-card__lot">ЛОТ #00001 | </span>
-                                    <h1 class="product-card__title title">Автомобиль Фольсваген Поло</h1>
-                                </div>
-                                <p class="product-card__text text"> Автомобиль Фольсваген Поло, год изготовления: 2016,
-                                    гос.
-                                    номер
-                                    М777НР35,
-                                    VIN XW0000ZZZZHG010011, ПТС 00 ОМ 000003. Автомобиль находится в
-                                    технически неисправном состоянии (после аварии).</p>
-                                <button class="product-card__btn btn">ПОДРОБНЕЕ</button>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="product-card__wrapper">
-                            <p class="product-card__text text text--date text--small">Опубликовано: <time
-                                    datatime="">28.10.2020
-                                </time>
-                            </p>
-                            <p class="product-card__text text">Стоимость</p><span
-                                class="product-card__text text text--bold">280
-                                000,00 руб.</span>
-                            <a href="" class="product-card__link link link--small">связаться с продавцом</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="product-card">
-                    <div class="product-card__grid">
-                        <div class="product-card__box">
-                            <div class="product-card__wrap">
-                                <img class="product-card__img" src="./assets/images/page-2/main/home-icons-1.svg"
-                                    alt="car">
-                            </div>
-
-                            <div class="product-card__inner">
-                                <div class="product-card__content">
-                                    <span class="product-card__lot">ЛОТ #00001 | </span>
-                                    <h1 class="product-card__title title">Автомобиль Фольсваген Поло</h1>
-                                </div>
-                                <p class="product-card__text"> Автомобиль Фольсваген Поло, год изготовления: 2016, гос.
-                                    номер
-                                    М777НР35,
-                                    VIN XW0000ZZZZHG010011, ПТС 00 ОМ 000003. Автомобиль находится в
-                                    технически неисправном состоянии (после аварии).</p>
-                                <button class="product-card__btn btn">ПОДРОБНЕЕ</button>
-                            </div>
-                        </div>
-
-                        <div class="product-card__wrapper">
-                            <p class="product-card__text text text--date text--small">Опубликовано: <time
-                                    datatime="">28.10.2020
-                                </time>
-                            </p>
-                            <p class="product-card__text text ">Стоимость</p><span
-                                class="product-card__text text text--bold">280
-                                000,00 руб.</span>
-                            <a href="" class="product-card__link link link--small">связаться с продавцом</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="product-card">
-                    <div class="product-card__grid">
-                        <div class="product-card__box">
-                            <div class="product-card__wrap">
-                                <img class="product-card__img" src="./assets/images/page-2/main/debitor-1.svg"
-                                    alt="car">
-                            </div>
-
-                            <div class="product-card__inner">
-                                <div class="product-card__content">
-                                    <span class="product-card__lot">ЛОТ #00001 | </span>
-                                    <h1 class="product-card__title title">Автомобиль Фольсваген Поло</h1>
-                                </div>
-                                <p class="product-card__text text"> Автомобиль Фольсваген Поло, год изготовления: 2016,
-                                    гос.
-                                    номер
-                                    М777НР35,
-                                    VIN XW0000ZZZZHG010011, ПТС 00 ОМ 000003. Автомобиль находится в
-                                    технически неисправном состоянии (после аварии).</p>
-                                <button class="product-card__btn btn">ПОДРОБНЕЕ</button>
-                            </div>
-                        </div>
-
-                        <div class="product-card__wrapper">
-                            <p class="product-card__text text text--date text--small">Опубликовано: <time
-                                    datatime="">28.10.2020
-                                </time>
-                            </p>
-                            <p class="product-card__text text">Стоимость</p><span
-                                class="product-card__text text text--bold">280
-                                000,00 руб.</span>
-                            <a href="" class="product-card__link link link--small">связаться с продавцом</a>
-                        </div>
-                    </div>
-                </article>
-            </section>
-            <!-- end products -->
-
-        </main>
-        <!-- end main  -->
-
-        <!-- footer  -->
-        <footer class="footer">
-            <div class="footer__wrapper">
-                <div class="footer__inner">
-                    <div class="footer__logo logo"><a class="logo__link" href="#"><img
-                                src="./assets/images/page-2/header/header-logo.png" alt=""
-                                class="logo__img logo__img--small"></a></div>
-                    <ul class="footer__menu menu">
-                        <li class="menu__item"><a class="menu__link link link--big" href="#">О нас</a></li>
-                        <li class="menu__item"><a class="menu__link link link--big" href="#">Каталог</a></li>
-                        <li class="menu__item"><a class="menu__link link link--big" href="#">FAQ</a></li>
-                    </ul>
-                </div>
-                <div class="footer__context">
-                    <p class="footer__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                        viverra
-                        tortor,
-                        quam tempor in ullamcorper elementum diam diam. Et sit lectus at gravida nibh tempus.
+    <section class="about">
+        <div class="container">
+            <div class="about__grid">
+                <div class="about__content">
+                    <h2 class="about__title title">о нас</h2>
+                    <p class="about__text text">Мы считаем, что любые остатки товаров: брак, возврат, неликвид и другие
+                        имеют огромную ценность и большой спрос, независимо от категорий, состояния или местоположения.
                     </p>
-                    <p class="footer__text text"> Uspendisse blandit pulvinar tempus neque eget consequat lectus. Eget
-                        quam
-                        pharetra turpis pulvinar facilisi vitae vel scelerisque. Arcu pellentesque integer fermentum
-                        amet
-                        amet, tristique.</p>
-                    <p class="footer__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p class="about__text text">В DOPDOX мы расширяем возможности предпринимателей и новаторов в сфере
+                        торговли.</p>
+                    <p class="about__text text">DOPDOX – это место, куда можно отправить непроданный, повреждённый и
+                        возвратный товар для его продажи и ускорения оборачиваемости капитала компании. </p>
+                    <p class="about__text text">В противном случае он остаётся на складах, занимая драгоценное
+                        пространство
+                        или выбрасывается на свалку.</p>
+
                 </div>
-                <div class="footer__contacts contacts">
-                    <div class="contacts__wrap">
-                        <a class="contacts__city" href="#">
-                            <address class="contacts__adress">101000 г.Москва <br>ул. Ленина, 12А, оф.41.</address>
-                        </a>
-                        <a class="contacts__tel" href="tel:+79991234567">+7 999 123-45-67</a>
-                        <a class="contacts__email" href="mailto:help@saledebet.com">help@saledebet.com</a>
-                    </div>
-                    <ul class="contacts__list">
-                        <li class="contacts__item">
-                            <a href="#" class="contacts__link">
-                                <img class="contacts__img" src="./assets/images/page-2/footer/footer-youtube.png"
-                                    alt="youtube">
+                <div class="about__fotos">
+                    <img class="about__img" src="./assets/images/page-home/about/foto1.jpg" alt="foto">
+                    <img class="about__img" src="./assets/images/page-home/about/foto2.jpg" alt="foto">
+                    <img class="about__img" src="./assets/images/page-home/about/foto3.jpg" alt="foto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="work">
+        <div class="container">
+            <h2 class="work__title title">Как это работает?</h2>
+
+            <div class="work__wrapper">
+                <div class="work__content">
+                    <h3 class="work__subtitle subtitle">Зарегистрироваться</h3>
+                    <p class="work__text text">Видите одно или несколько понравившихся предложений. Подайте заявку на
+                        участие в торгах на выбранный лот.</p>
+                </div>
+                <div class="work__content">
+                    <h3 class="work__subtitle subtitle">Получить одобрение</h3>
+                    <p class="work__text text">После того, как мы получим вашу заявку и она будет одобрена, учётная
+                        запись будет допущена к покупкам.</p>
+                </div>
+                <div class="work__content">
+                    <h3 class="work__subtitle subtitle">Начать покупки</h3>
+                    <p class="work__text text">Начните покупки с возможностью торга у продавцов в разных категориях.</p>
+                </div>
+                <div class="work__content">
+                    <h3 class="work__subtitle subtitle">Выиграть в торгах</h3>
+                    <p class="work__text text">Мы покажем доступные варианты оплаты и доставки, чтобы вы получили свой
+                        товар.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="container">
+            <h2 class="products__title title">Сотни категорий товаров на выбор</h2>
+            <div class="products__grid">
+                <div class="products__categories categories">
+                    <img class="categories__img" src="./assets/images/page-home/products/products-beauty.jpg"
+                        alt="beauty">
+                    <h3 class="categories__description">красота и здоровье</h3>
+                </div>
+                <div class="products__categories categories">
+                    <img class="categories__img" src="./assets/images/page-home/products/products-kids.jpg"
+                        alt="beauty">
+                    <h3 class="categories__description">товары для детей</h3>
+                </div>
+                <div class="products__categories categories">
+                    <img class="categories__img" src="./assets/images/page-home/products/products-electronics.jpg"
+                        alt="beauty">
+                    <h3 class="categories__description">техника</h3>
+                </div>
+                <div class="products__categories categories">
+                    <img class="categories__img" src="./assets/images/page-home/products/products-furniture.jpg"
+                        alt="beauty">
+                    <h3 class="categories__description">мебель</h3>
+                </div>
+                <div class="products__categories categories">
+                    <img class="categories__img" src="./assets/images/page-home/products/products-smartphones.jpg"
+                        alt="beauty">
+                    <h3 class="categories__description">сотовые телефоны</h3>
+                </div>
+                <div class="products__categories categories">
+                    <img class="categories__img" src="./assets/images/page-home/products/products-clothes.jpg"
+                        alt="beauty">
+                    <h3 class="categories__description">одежда</h3>
+                </div>
+            </div>
+            <a class="products__btn btn" href="#">каталог</a>
+        </div>
+    </section>
+
+    <section class="action">
+        <div class="container">
+            <div class="action__wrapper">
+                <div class="action__content">
+                    <h2 class="action__title title title--light">готовы начать?</h2>
+                    <p class="action__text text text--light">DOPDOX здесь, чтобы помочь вам найти лучшие предложения на
+                        товарные остатки: меньше переживать и больше продавать.</p>
+                </div>
+                <div class="action__buttons" role="group" aria-label="">
+                    <a class="action__link link--light" href="#">Рассказать друзьям</a>
+                    <a class="action__btn btn" href="#">каталог</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__content">
+                    <h3 class="footer__title title title--light">О компании</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a class="footer__link link--light" href="#">Как это работает</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link link--light" href="#">Гарантия защиты покупателей</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link link--light" href="#">Реквизиты</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link link--light" href="#">Договор оферты</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="footer__content">
+                    <h3 class="footer__title title title--light">Для партнеров</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a class="footer__link link--light" href="#">Почему выгодно закупать на DOPDOX?
                             </a>
                         </li>
-                        <li class="contacts__item">
-                            <a href="#" class="contacts__link">
-                                <img class="contacts__img" src="./assets/images/page-2/footer/footer-facebook.png"
-                                    alt="facebook">
+                        <li class="footer__item">
+                            <a class="footer__link link--light" href="#">Почему выгодно ликвидировать на DOPDOX?
                             </a>
                         </li>
-                        <li class="contacts__item">
-                            <a href="#" class="contacts__link">
-                                <img class="contacts__img" src="./assets/images/page-2/footer/footer-vk.png"
-                                    alt="vkontakte">
+                        <li class="footer__item">
+                            <a class="footer__link link--light" href="#">Условия размещения
                             </a>
                         </li>
-                        <li class="contacts__item">
-                            <a href="#" class="contacts__link">
-                                <img class="contacts__img" src="./assets/images/page-2/footer/footer-instagram.png"
-                                    alt="instagramm">
+                        <li class="footer__item">
+                            <a class="footer__link link--light" href="#">Правила сделок</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="footer__content">
+                    <h3 class="footer__title title title--light">Помощь</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a class="footer__link link--light" href="#">Как зарегистрироваться</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link link--light" href="#">Как купить
                             </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link link--light" href="#">Как оплатить</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link link--light" href="#">Доставка и получение</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="footer__content">
+                    <h3 class="footer__title title title--light">Контакты</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a class="footer__link link--light" href="#">ООО “DOPDOX”</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link link--light" href="#">ИНН 7810794330</a>
                         </li>
                     </ul>
                 </div>
-                <form action="" class="footer__form form">
-                    <h2 class="form__title">Есть вопросы? Напишите нам</h2>
-
-                    <textarea class="form__textarea" name="" id="" placeholder="Текст сообщения "></textarea>
-                    <div class="form__wrap">
-                        <input class="form__email input" type="email" name="" id="" placeholder="Ваш E-mail">
-                        <button class="form__btn btn" type="submit">отправить</button>
-                    </div>
-                </form>
-
             </div>
-            <div class="footer__bottom">
-                <small class="footer__small">Copyright © 2020. All rights reserved.</small>
-            </div>
-        </footer>
-        <!-- end footer  -->
-    </div>
-    </div>
-
-
-
-
-
-
-
+            <span class="footer__copyright">Все права защищены © 2021</span>
+        </div>
+    </footer>
+    <!-- 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script> -->
     <script src="./assets/js/script.js"></script>
 </body>
 

@@ -1,0 +1,55 @@
+.work {
+	padding-top: 100px;
+	padding-left: 18px;
+
+	// .work__title
+	&__title {}
+
+	// .work__grid
+	&__wrapper {
+		margin: 90px auto 0;
+		position: relative;
+		@include wh (405px, 935px);
+		background-repeat: no-repeat;
+		background-position: center top;
+		background-size: cover;
+		background-image: url(../images/page-home/work/work-number-path.svg);
+	}
+
+	// .work__conent
+	&__content {
+		&:first-child {
+			@include pos(absolute, $top: 2px, $right: -67%);
+		}
+
+		&:nth-child(2) {
+			@include pos(absolute, $top: 17%, $left: -119%);
+		}
+
+		&:nth-child(3) {
+			@include pos(absolute, $top: 52%, $right: -106%);
+		}
+
+		&:last-child {
+			@include pos(absolute, $top: 81%, $left: -107%);
+		}
+	}
+
+	// .work__subtitle
+	&__subtitle {
+		margin-bottom: 32px;
+	}
+
+	// .work__text
+	&__text {
+		max-width: 400px;
+	}
+
+	// .work__path
+	&__path {
+		@include pos (relative, 90px, 0, 33%, 0);
+	}
+
+	// .work__path-svg
+	&__path-svg {}
+}

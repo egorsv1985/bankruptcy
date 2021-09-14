@@ -1,0 +1,27 @@
+.description {
+	padding: 24px 0 44px;
+
+	// .description__grid
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(6, minmax(min-content, max-content));
+		padding-left: 20px;
+
+		column-gap: 125px;
+
+
+	}
+
+	// .description__item
+	&__item {
+		@include flex (flex-end, center, $flex-direction: column);
+	}
+
+	// .description__img
+	&__img {}
+
+	// .description__link
+	&__link {
+		margin-top: 18px;
+	}
+}

@@ -1,11 +1,46 @@
 .link {
 	@include font (12px, 20px, 500, center, uppercase);
 	color: $secondaryTextColor;
-	&--big {
-		@include font (16px, 22px, 400);		
+	@include flex (center, center);
+
+	&--light {
+		color: $primaryColor;
 	}
+
+
+
+
+	&--dark {
+		color: #000000;
+	}
+
+	&--border {
+		@include wh (120px, 46px);
+		background-color: $primaryColor;
+		border-radius: 4px;
+
+	}
+
+
+	&--big {
+		@include font (16px, 22px, 400);
+	}
+
 	&--small {
 		font-size: 9px;
+	}
+
+
+	&--white {
+		color: $primaryColor;
+	}
+
+	&--left {
+		justify-content: flex-start;
+	}
+
+	&--pl {
+		padding-left: 15px;
 	}
 
 

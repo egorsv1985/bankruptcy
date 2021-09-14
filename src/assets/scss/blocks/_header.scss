@@ -1,25 +1,32 @@
 .header {
-	border-bottom: 2px solid $accentColor;
-	padding: 0px 8px 0px 32px;
+	padding: 24px 0 18px;
+
 
 	// .header__wrapper
 	&__wrapper {
 		@include flex (space-between, center);
+		padding-left: 20px;
+		padding-right: 26px;
 	}
 
-	// .header__inner
-	&__inner {
-		@include flex (center, center);
-	}
+	// .header__menu
+	&__menu {}
 
 	// .header__logo
-	&__logo {
-		margin-inline-end: 12px;
+	&__logo {}
+
+	// .header__right-block
+	&__right-block {
+		@include flex (space-between, center);
 	}
 
 	// .header__btn
-	&__btn {		
-		@include wh (100px, 30px);		
-		@include border (2px, solid, $accentColor);		
+	&__btn {
+		@include wh (142px, 34px);
+		@include border (2px, solid, $accentColor);
+		letter-spacing: 1px;
+		@include border (2px, solid, $accentColor);
+		border-radius: 10px;
+
 	}
 }
