@@ -90,8 +90,7 @@
 				@include pos (absolute, $top: -12%, $right: 14%);
 				@include wh(37px, 33px);
 				border-radius: 10px;
-
-				@include background (url(../images/page-home/block/tik-tok.svg));
+				@include background (url(../images/page-home/block/tiktok-logo.svg));
 			}
 
 			&:nth-child(2) ::after {
